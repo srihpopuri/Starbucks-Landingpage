@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+            <header>
+                <a href="">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigator">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">What's New</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Any Queries</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="content">
+                <button onclick="topFunction()" id="myBtn" title="Click to go to the top">Top</button>
+                <div class="textBox">
+                    <h2>It's not just Coffe <br>It's <span id="output">Starbucks</span></h2>
+                    <p>Make Every Sip More Rewarding<br />
+                        Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food,
+                        get free refills, pay and order with your phone, and more.
+                    </p>
+                    <a href="#" id="Learnmore">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/frap1.png" alt="Drink1" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumbnails">
+                <li>
+                    <img src="images/thumb1.png" alt=" green Frap" id="changeGreen" onclick="imageSlider('images/frap1.png'); changeCircleColor('#017143') 
+                    changeSpanColor('#017143')">
+                </li>
+                <li>
+                    <img src="images/thumb2.png" alt=" green Frap" id="changePink1" onclick="imageSlider('images/frap2.png'); changeCircleColor('#eb7495') 
+                    changeSpanColor('#eb7495')">
+                </li>
+                <li>
+                    <img src="images/thumb3.png" alt=" green Frap" id="changePink2" onclick="imageSlider('images/frap3.png'); changeCircleColor('#d752b1') 
+                    changeSpanColor('#d752b1')">
+                </li>
+            </ul>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/Starbucks/" target="_blank">
+                        <img src="images/facebook.png" alt="facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/starbucks?lang=en" target="_blank">
+                        <img src="images/twitter.png" alt="facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/starbucks/?hl=en" target="_blank">
+                        <img src="images/instagram.png" alt="facebook logo">
+                    </a>
+                </li>
+            </ul>
+        
+    </section>
+    <!--
+    <div class="section1">
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/drink1.PNG" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Strawberry Frappuccino</h2>
+                        <p class="description">price is</p>
+
+                        <button class="button">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+    <div class="section2" id="section2">
+        <h2 class="section2heading" id="heading2">Any Queries.....</h2>
+        <br>
+    <div class="container">
+        <input type="text" name="myhoneypot" class="myclass">
+        <form id="my-form" action="" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name......" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last  name......" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last  name......" required>
+            <label for="emailaddress">E-Mail</label>
+            <input type="email" id="email" name="email" pattern ="{^ @}*@{^ @}" placeholder="Your email......" required>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="" id="subject" placeholder="your message" style="height: 200px;" required></textarea>
+            <input type="submit" value="submit" id="my-form-button">
+        </form>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Starbucks® 2024 - copyrights</p>
+    </div>
+</body>
+</html>
